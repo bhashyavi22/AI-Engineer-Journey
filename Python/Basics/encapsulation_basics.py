@@ -32,3 +32,12 @@ student=Student()
 
 # Name mangling (for learning only)
 print(student._Student__name)
+print("----------------------------")
+# Program 5- by using getter method
+class Student:
+    def __init__(self):
+        self.__name="Bhashyavi"
+    def get_name(self):
+        return self.__name
+student=Student()
+print(student.get_name())
