@@ -22,3 +22,13 @@ class CollegeStudent(Student):
 student=CollegeStudent()
 student.display()
 print("---------------------------")
+# program 4 - Private variable
+class Student:
+    def __init__(self):
+        self.__name="Bhashyavi"
+student=Student()
+# print(student.__name)
+# this gives AttributeError
+
+# Name mangling (for learning only)
+print(student._Student__name)
