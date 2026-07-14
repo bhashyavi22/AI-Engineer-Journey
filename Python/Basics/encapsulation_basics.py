@@ -41,3 +41,17 @@ class Student:
         return self.__name
 student=Student()
 print(student.get_name())
+print("----------------------------")
+# Program 6 - Setter method
+class Student:
+    def __init__(self):
+        self.__name="Bhashyavi"
+    def get_name(self):
+        return self.__name
+    def set_name(self,name):
+        self.__name=name
+
+student=Student()
+print(student.get_name())
+student.set_name("Nitish")
+print(student.get_name())
