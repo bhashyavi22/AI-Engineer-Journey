@@ -55,3 +55,29 @@ student=Student()
 print(student.get_name())
 student.set_name("Nitish")
 print(student.get_name())
+print("------------------------------")
+# Program 7 - Setter Method with Validation
+
+class Student:
+    def __init__(self):
+        self.__name = "Bhashyavi"
+
+    def get_name(self):
+        return self.__name
+
+    def set_name(self, name):
+        if len(name) >= 3:
+            self.__name = name
+        else:
+            print("Invalid name")
+
+student = Student()
+
+print(student.get_name())
+
+student.set_name("Nitish")
+print(student.get_name())
+
+student.set_name("r")
+print(student.get_name())
+print("-----------------------------")
