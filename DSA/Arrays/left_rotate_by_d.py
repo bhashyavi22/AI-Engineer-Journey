@@ -10,4 +10,14 @@ for i in range(len(arr)-d):
 for i in arr1:
    arr2.append(i)
 print(arr2)
-   
+
+#Another Approach
+arr=list(map(int,input("Enter numbers=").split()))
+d=int(input("Number of Positions"))
+d=d%len(arr)
+for i in range(d):
+    first=arr[0]
+    for i in range(len(arr)-1):
+        arr[i]=arr[i+1]
+    arr[-1]=first
+print(*arr)
