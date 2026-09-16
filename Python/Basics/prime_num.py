@@ -7,3 +7,4 @@ def prime(num):
     return "prime"
 num=int(input("Enter="))
 print(prime(num))
+
