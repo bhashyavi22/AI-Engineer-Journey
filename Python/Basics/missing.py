@@ -11,3 +11,5 @@ nums = [3, 0, 1]
 result = missingNumber(nums)
 
 print(result)
+
+
