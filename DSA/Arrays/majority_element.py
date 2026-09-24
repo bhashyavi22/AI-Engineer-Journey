@@ -1,4 +1,4 @@
-def majority_element(arr):
+'''def majority_element(arr):
     freq={}
     for i in arr:
         if i in freq:
@@ -11,4 +11,5 @@ def majority_element(arr):
             major=i
     return major
 arr=list(map(int,input("enter the elements=").split()))
-print(majority_element(arr))
+print(majority_element(arr))'''
+
